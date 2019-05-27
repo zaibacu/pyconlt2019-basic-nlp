@@ -1,6 +1,6 @@
 # Setup
 
-Create virtualenv, enter it and to `pip install -r requirements.txt`
+Create virtualenv, enter it and do `pip install -r requirements.txt`
 
 # Running it
 
