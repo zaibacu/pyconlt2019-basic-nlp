@@ -29,8 +29,8 @@ def main():
     corpus = list([d.doc2bow(t) for t in tokens])
     tfidf = TfidfModel(corpus)
 
-    print('\n----------------------\n\tTFIDF\n----------------------')
-    print('{0} -> {1}'.format(t, list(tfidf[corpus[2]])))  # single example to show
+    print("\n----------------------\n\tTFIDF\n----------------------")
+    print("{0} -> {1}".format(t, list(tfidf[corpus[2]])))  # single example to show
 
     results = [tfidf[c] for c in corpus]
 
