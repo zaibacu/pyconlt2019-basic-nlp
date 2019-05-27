@@ -22,7 +22,7 @@ def main():
     d = Dictionary(tokens)
     print(d)
 
-    t = tokens[2]
+    t = tokens[2]  # single example to show
 
     print('\n----------------------\n\t"Bag of Words"\n----------------------')
     print('{0} -> {1}'.format(t, d.doc2bow(t)))
@@ -31,7 +31,7 @@ def main():
     tfidf = TfidfModel(corpus)
 
     print('\n----------------------\n\tTFIDF\n----------------------')
-    print('{0} -> {1}'.format(t, list(tfidf[corpus[2]])))
+    print('{0} -> {1}'.format(t, list(tfidf[corpus[2]])))  # single example to show
 
     results = [tfidf[c] for c in corpus]
 
